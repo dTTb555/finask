@@ -2,22 +2,23 @@
 
 ## 1. 可访问产品 URL
 
-> 本 Demo 为本地运行版本，按以下步骤启动后可访问：
-
 | 页面 | 地址 |
 |---|---|
-| 主问答界面 | http://localhost:5173/chat |
-| 运营统计看板 | http://localhost:5173/stats |
-| 知识库管理后台 | http://localhost:5173/admin/knowledge |
-| 后端 API 文档 | http://localhost:8000/docs |
+| 主问答界面（线上） | https://finask-oa.netlify.app/chat |
+| 运营统计看板（线上） | https://finask-oa.netlify.app/stats |
+| 知识库管理后台（线上） | https://finask-oa.netlify.app/admin/knowledge |
+| 源代码仓库 | https://github.com/dTTb555/finask |
 
-**启动方式**（详见 README.md）：
+> 前端托管于 Netlify，后端 API 在后端部署完成后启用。本地同样可完整运行，见下方。
+
+**本地启动**（详见 README.md）：
 ```bash
 # 后端
 cd finask/backend && source venv/bin/activate && uvicorn main:app --port 8000
 
 # 前端（新终端）
 cd finask/frontend && npm run dev
+# 访问 http://localhost:5173/chat
 ```
 
 ---
