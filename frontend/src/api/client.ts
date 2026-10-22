@@ -1,3 +1,4 @@
+/// <reference types="vite/client" />
 /**
  * API 客户端封装
  * 开发模式：VITE_API_BASE_URL 为空，Vite proxy 将 /api 转发到 http://localhost:8000

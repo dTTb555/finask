@@ -57,11 +57,14 @@ export default function AdminPage() {
   const loadItems = async () => {
     setLoading(true)
     try {
-      const data = await knowledgeApi.list({
-        category: filterCategory || undefined,
-        keyword: filterKeyword || undefined,
+      const data = await knowledgeApi.list()
+      // 客户端过滤 category 和 keyword
+      const filtered = data.filter((item) => {
+        const matchCat = !filterCategory || item.category === filterCategory
+        const matchKw = !filterKeyword || item.title.includes(filterKeyword) || item.content.includes(filterKeyword)
+        return matchCat && matchKw
       })
-      setItems(data)
+      setItems(filtered)
     } catch (err: unknown) {
       message.error((err as Error).message)
     } finally {

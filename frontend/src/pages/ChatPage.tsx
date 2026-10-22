@@ -222,7 +222,7 @@ export default function ChatPage() {
             }}
           >
             <Input
-              ref={inputRef as React.RefObject<HTMLInputElement>}
+              ref={inputRef as never}
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
               onPressEnter={() => sendMessage(inputValue)}
