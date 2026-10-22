@@ -17,8 +17,8 @@ app = FastAPI(
     version="0.2.0",
 )
 
-# CORS — 生产时 CORS_ORIGINS 包含实际前端域名，或设为 ["*"] 允许所有来源（Demo 可接受）
-_cors_origins = settings.CORS_ORIGINS
+# CORS — 生产时 CORS_ORIGINS 包含实际前端域名，或设为 "*" 允许所有来源（Demo 可接受）
+_cors_origins = settings.cors_origins_list
 app.add_middleware(
     CORSMiddleware,
     allow_origins=_cors_origins,
