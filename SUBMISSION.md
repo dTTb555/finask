@@ -2,14 +2,17 @@
 
 ## 1. 可访问产品 URL
 
-| 页面 | 地址 |
+| 页面 | 线上地址 |
 |---|---|
-| 主问答界面（线上） | https://finask-oa.netlify.app/chat |
-| 运营统计看板（线上） | https://finask-oa.netlify.app/stats |
-| 知识库管理后台（线上） | https://finask-oa.netlify.app/admin/knowledge |
-| 源代码仓库 | https://github.com/dTTb555/finask |
+| **主问答界面** | **https://finask-oa.netlify.app/chat** |
+| **运营统计看板** | **https://finask-oa.netlify.app/stats** |
+| **知识库管理后台** | **https://finask-oa.netlify.app/admin/knowledge** |
+| 后端 API 文档 | https://finask-backend-9df8.onrender.com/docs |
+| 后端健康检查 | https://finask-backend-9df8.onrender.com/health |
+| **源代码仓库** | **https://github.com/dTTb555/finask** |
 
-> 前端托管于 Netlify，后端 API 在后端部署完成后启用。本地同样可完整运行，见下方。
+**技术栈部署**：前端 Netlify（静态托管）+ 后端 Render（Docker）
+> 注：Render 免费实例 15 分钟无请求会休眠，首次访问需等待约 30 秒冷启动。
 
 **本地启动**（详见 README.md）：
 ```bash
