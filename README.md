@@ -2,6 +2,12 @@
 
 > 面向 App 内投教/客服场景的 AI 智能问答 Demo，在合规边界内提供可追溯、可解释的金融知识回答，并持续暴露知识缺口。
 
+**🌐 线上 Demo**：https://finask-oa.netlify.app/chat
+**📦 源码仓库**：https://github.com/dTTb555/finask
+**⚙️ 后端 API**：https://finask-backend-9df8.onrender.com/docs
+
+> 注：后端部署在 Render 免费实例，15 分钟无请求会休眠，首次访问需等待约 30 秒冷启动。
+
 ---
 
 ## 目标用户
